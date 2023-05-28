@@ -56,3 +56,5 @@ $ git clone https://github.com/nousssss/halide-nousssss
 $ cd halide-nousssss/code/
 $ HALIDE_INCLUDE_PATH=/path/to/halide/headers/folder HALIDE_SHARED_LIB_PATH=/path/to/halide/libs/folder python3 script.py
 ```
+
+## 
