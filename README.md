@@ -49,7 +49,7 @@ To use the script that compares the C code and Halide code results, follow these
 
 1. Make sure you have set the environment variables `HALIDE_INCLUDE_PATH` and `HALIDE_SHARED_LIB_PATH` appropriately. If Halide is built systemwide, you don't need to set these variables.
 
-2. Compile and run the script (make sure that the script and the source files are in the same folder)
+2. Run the script (make sure that the script and the source files are in the same folder)
 
 ```bash
 $ git clone https://github.com/nousssss/halide-nousssss
