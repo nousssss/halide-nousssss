@@ -44,3 +44,14 @@ To run the binary:
 $ LD_LIBRARY_PATH=Halide/build/src/ ./app
 ```
  
+ ## Using the Script
+To use the script that compares the C code and Halide code results, follow these steps:
+
+1. Make sure you have set the environment variables `HALIDE_INCLUDE_PATH` and `HALIDE_SHARED_LIB_PATH` appropriately. If Halide is built systemwide, you don't need to set these variables.
+
+2. Compile and run the script by executing the following command in the terminal:
+```bash
+$ git clone https://github.com/nousssss/halide-nousssss
+$ cd halide-nousssss/code/
+$ HALIDE_INCLUDE_PATH=/path/to/halide/headers HALIDE_SHARED_LIB_PATH=/path/to/halide/libs python3 script.py
+```
