@@ -24,7 +24,7 @@ Then I launched the build process by running:
 $ cmake --build llvm-build -j20
 ```
  
-To make the build faster I added the `-j 20` option to build in parallel 
+To make the build faster I added the `-j 20` option to build in parallel.
  
 After installing LLVM and setting the ENV variables for Halide, I did the same thing:
  
@@ -39,7 +39,7 @@ To compile a Halide program I just need to instruct the linked to use the shared
 ```bash
 $ g++ main.cpp -g -I Halide/build/include -L Halide/build/src -lHalide -lpthread -ldl -o app -std=c++17
 ```
-To run the binary:
+To run the generated binary:
 ```bash
 $ LD_LIBRARY_PATH=Halide/build/src/ ./app
 ```
@@ -49,9 +49,10 @@ To use the script that compares the C code and Halide code results, follow these
 
 1. Make sure you have set the environment variables `HALIDE_INCLUDE_PATH` and `HALIDE_SHARED_LIB_PATH` appropriately. If Halide is built systemwide, you don't need to set these variables.
 
-2. Compile and run the script by executing the following command in the terminal:
+2. Compile and run the script (make sure that the script and the source files are in the same folder)
+
 ```bash
 $ git clone https://github.com/nousssss/halide-nousssss
 $ cd halide-nousssss/code/
-$ HALIDE_INCLUDE_PATH=/path/to/halide/headers HALIDE_SHARED_LIB_PATH=/path/to/halide/libs python3 script.py
+$ HALIDE_INCLUDE_PATH=/path/to/halide/headers/folder HALIDE_SHARED_LIB_PATH=/path/to/halide/libs/folder python3 script.py
 ```
