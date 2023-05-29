@@ -2,13 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 
-void print_vector(long *X, int size){
-    for (int i=0; i<size ; i++) {
-        printf("%ld ", X[i]);
-    }
-    printf("\n");
-}
-
 void aXPY(long *X, long *Y, long *Z, long alpha, int n) {
     for (int i = 0; i < n; i++) {
         Z[i] = alpha * X[i] + Y[i];
@@ -29,8 +22,7 @@ void fill_odd(long *X, int n) {
 
 
 int main() {
-    int N = 10;
-    // printf("n = %ld \n", n);
+    int N = 1000000;
     int i = 0;
 
     clock_t start_time, end_time;
@@ -49,14 +41,7 @@ int main() {
     fill_even(X,N);
     fill_odd(Y,N);
 
-    // printf("Vector X : \n");
-    // print_vector(X,N);
-
-    // printf("Vector Y : \n");
-    // print_vector(Y,N);
-
     start_time = clock();
-    // printf("Started working :) \n");
 
     aXPY(X, Y, Z, alpha, N);
 
@@ -64,10 +49,7 @@ int main() {
 
     execution_duration = ((double)(end_time - start_time)) / CLOCKS_PER_SEC;
 
-    printf("\n\nC version took %f \n", execution_duration);
-
-    // printf("\nVector 3*X+Y : \n");
-    // print_vector(Z,N);
+    printf("\n\nC version took %f \n", execution_duration*1000);
 
     // Free allocated memory
     free(X);

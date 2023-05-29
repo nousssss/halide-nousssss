@@ -4,7 +4,7 @@
 
 int main(int argc, char **argv) {
 
-    const int N = 100'000'000;
+    const int N = 1'000'000;
     const int alpha = 3;
 
     Halide::Var i;
