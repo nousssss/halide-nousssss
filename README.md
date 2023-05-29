@@ -45,7 +45,7 @@ I've used :
 
 - $Y :$ vector of first $N$ odd numbers.
 
-To verify that Halide implementation works, I compared the result to the one of a C++ implementation of the funtion that I added in the same file.
+To verify that Halide implementation works, I compared its result to the one of a C++ implementation of the funtion that I added in the same file.
 
 ## Building LLVM and Halide from Source
 To build Halide, I first built LLVM following the instructions on the ReadMe page;
