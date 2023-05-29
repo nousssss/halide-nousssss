@@ -5,6 +5,7 @@ For this challenge, among the functions of BLAS, I've chosen to implement the `x
 $$z = \alpha*x + y$$
 
 $x,y :$ vectors.
+
 $alpha :$ a scalar
 
 
