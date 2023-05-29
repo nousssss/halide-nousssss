@@ -1,9 +1,24 @@
 # PFE Challenge
 
-## Requirements
+## Using the Script
+
+### Requirements
 - GCC (GNU Compiler Collection).
 - G++ (GNU Compiler Collection).
 - Halide.
+
+
+To use the script that compares the C code and Halide code results, follow these steps:
+
+1. Make sure you have set the environment variables `HALIDE_INCLUDE_PATH` and `HALIDE_SHARED_LIB_PATH` appropriately. If Halide is built systemwide, you don't need to set these variables.
+
+2. Run the script (make sure that the script and the source files are in the same folder)
+
+```bash
+$ git clone https://github.com/nousssss/halide-nousssss
+$ cd halide-nousssss/code/
+$ HALIDE_INCLUDE_PATH=/path/to/halide/headers/folder HALIDE_SHARED_LIB_PATH=/path/to/halide/libs/folder python3 script.py
+```
 
 ## Building LLVM and Halide from Source
 To build Halide, I first built LLVM following the instructions on the ReadMe page;
@@ -44,17 +59,6 @@ To run the generated binary:
 $ LD_LIBRARY_PATH=Halide/build/src/ ./app
 ```
  
- ## Using the Script
-To use the script that compares the C code and Halide code results, follow these steps:
-
-1. Make sure you have set the environment variables `HALIDE_INCLUDE_PATH` and `HALIDE_SHARED_LIB_PATH` appropriately. If Halide is built systemwide, you don't need to set these variables.
-
-2. Run the script (make sure that the script and the source files are in the same folder)
-
-```bash
-$ git clone https://github.com/nousssss/halide-nousssss
-$ cd halide-nousssss/code/
-$ HALIDE_INCLUDE_PATH=/path/to/halide/headers/folder HALIDE_SHARED_LIB_PATH=/path/to/halide/libs/folder python3 script.py
-```
+Build logs are in the **logs** folder.
 
 ## 
