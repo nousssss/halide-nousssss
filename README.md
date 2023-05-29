@@ -74,6 +74,7 @@ To run the generated binary:
 $ LD_LIBRARY_PATH=Halide/build/src/ ./app
 ```
  
-Build logs are in the **logs** folder.
+ 
+**PS** : Build logs are in the **logs** folder.
 
-## 
+ 
