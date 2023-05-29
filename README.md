@@ -35,6 +35,14 @@ $ git clone https://github.com/nousssss/halide-nousssss
 $ cd halide-nousssss/code/
 $ HALIDE_INCLUDE_PATH=/path/to/halide/headers/folder HALIDE_SHARED_LIB_PATH=/path/to/halide/libs/folder python3 script.py
 ```
+I've used : 
+$N$ (size of vectors) $=$ $1000000000$
+
+$\alpha = 3$
+
+$X : vector of first N even numbers$
+
+$Y : vector of first N odd numbers$
 
 ## Building LLVM and Halide from Source
 To build Halide, I first built LLVM following the instructions on the ReadMe page;
