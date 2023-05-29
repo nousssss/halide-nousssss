@@ -3,8 +3,10 @@
  
 For this challenge, among the functions of BLAS, I've chosen to implement the `xAXPY` function :
 $$z = \alpha*x + y$$
-$x and y :$ vectors.
+
+$x,y :$ vectors.
 $alpha :$ a scalar
+
 
 While experimenting with the code, I've found that Halide, without parallelism, is 20% faster than raw C. For vectors of size 100 billion : C code takes 500ms to compute the result while halide takes 400ms (tested on a VM with 22 cores and 40gb of RAM). So even without using parallelism, halide is faster.
 Meanwhile, when using parallelism, halide is 5x faster, and it's done very easily and declaratively.
