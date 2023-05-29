@@ -40,9 +40,9 @@ $N$ (size of vectors) $=$ $1000000000$
 
 $\alpha = 3$
 
-$X : vector of first N even numbers$
+$X :$ vector of first N even numbers.
 
-$Y : vector of first N odd numbers$
+$Y :$ vector of first N odd numbers.
 
 ## Building LLVM and Halide from Source
 To build Halide, I first built LLVM following the instructions on the ReadMe page;
