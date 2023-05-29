@@ -9,12 +9,13 @@ $x,y :$ vectors.
 $alpha :$ a scalar
 
 
-While experimenting with the code, I've found that Halide, without parallelism, is 20% faster than raw C. For vectors of size 100 billion : C code takes 500ms to compute the result while halide takes 400ms (tested on a VM with 22 cores and 40gb of RAM). So even without using parallelism, halide is faster.
+While experimenting with the code, I've found that Halide, without parallelism, is 20% faster than raw C. For vectors of size 100 million : C code takes 500ms to compute the result while halide takes 400ms (tested on a VM with 22 cores and 40gb of RAM). So even without using parallelism, halide is faster.
 Meanwhile, when using parallelism, halide is 5x faster, and it's done very easily and declaratively.
 
 If we were performing image processing tasks, the performance increase will be more noticeable, because the operations used here are simple.
 
 I wanted to explore vectorization (summing in vectorized mode) in halide as well but I did not have much time.
+
 ## Using the Script
 
 ### Requirements
